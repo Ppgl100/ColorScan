@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2A363B"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#2A363B">
 
         <LinearLayout
             android:id="@+id/linLayout"
@@ -20,19 +22,30 @@
                 android:id="@+id/loadedImage"
                 android:layout_width="match_parent"
                 android:layout_height="540dp"
-                android:src="@color/colorAccent" />
+                android:background="#2A363B"/>
 
             <Button
                 android:id="@+id/takePic"
+                style="@android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#FECEA8"
                 android:text="Take Picture" />
 
             <Button
                 android:id="@+id/loadPic"
+                style="@android:style/Widget.Button.Small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#E84A5F"
                 android:text="Load Picture" />
+
+            <Button
+                style="@android:style/Widget.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2A363B"
+                android:text="" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

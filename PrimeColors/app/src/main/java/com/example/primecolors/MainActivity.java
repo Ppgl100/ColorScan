@@ -156,10 +156,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 //Removes the colors in the layout from previous scans
                 LinearLayout myLayout = findViewById(R.id.linLayout);
-                while(myLayout.getChildCount()>3) {
+                while(myLayout.getChildCount()>4) {
                     for (int i = 0; i < myLayout.getChildCount(); i++) {
                         int deleteCnt = myLayout.getChildCount() - 1;
-                        if (deleteCnt > 2) {
+                        if (deleteCnt > 3) {
                             myLayout.removeViewAt(deleteCnt);
                         }
 
